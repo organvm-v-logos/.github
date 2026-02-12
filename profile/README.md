@@ -8,6 +8,8 @@
 
 **The organ that works in the open. Essays, transparent methodology, and building in public.**
 
+**2 repositories · 16 published essays · [Read the essays →](https://organvm-v-logos.github.io/public-process/)**
+
 </div>
 
 ---
@@ -31,22 +33,20 @@ Building in public matters because:
 - **The gap between intent and execution is where learning lives.** Essays that track that gap — honestly, in real time — create a record that has long-term value for both the author and the audience.
 - **Writing clarifies thinking.** The act of articulating a decision forces precision that internal notes never demand. ORGAN-V essays are a forcing function for the entire system's intellectual rigor.
 
-This is not performative openness. ORGAN-V publishes because the process of building an eight-organ system across 44+ repositories is itself a body of knowledge worth preserving.
+This is not performative openness. ORGAN-V publishes because the process of building an eight-organ system across 81 repositories is itself a body of knowledge worth preserving.
 
 ## Repositories
 
 | Repository | Description | Status |
 |:-----------|:------------|:------:|
-| [**public-process**](https://github.com/organvm-v-logos/public-process) | Flagship essay series — methodology, reflections, and building-in-public narratives | ![Deployed](https://img.shields.io/badge/status-deployed-brightgreen?style=flat-square) |
+| [**public-process**](https://github.com/organvm-v-logos/public-process) | Flagship essay series — 16 published essays on methodology, architecture, and building-in-public | ![Deployed](https://img.shields.io/badge/status-deployed-brightgreen?style=flat-square) |
 | [.github](https://github.com/organvm-v-logos/.github) | Org profile and community health files | Infrastructure |
 
-The `public-process` repository is the primary venue for ORGAN-V content. It houses long-form essays (3,000–5,000 words), shorter marginalia, and structured process documentation organized by phase and topic. Its README (4,040 words) serves as both a reading guide and a statement of editorial philosophy.
-
-Future content will include essays on: the architecture of multi-org GitHub systems, the economics of AI-conducted documentation, the ontology of creative institutions, and the philosophy of naming.
+The `public-process` repository is the primary venue for ORGAN-V content. It houses long-form essays (3,000-5,000 words), shorter marginalia, and structured process documentation organized by phase and topic. Its Jekyll site with RSS is live at **[organvm-v-logos.github.io/public-process](https://organvm-v-logos.github.io/public-process/)**.
 
 ## How ORGAN-V Fits the System
 
-The organvm system distributes creative and institutional work across eight specialized organs. ORGAN-V occupies a unique position: it is the organ that **observes and narrates** the work of all the others.
+The organvm system distributes creative and institutional work across eight specialized organs — 81 repositories, ~320K words of documentation. ORGAN-V occupies a unique position: it is the organ that **observes and narrates** the work of all the others.
 
 | Organ | Domain | Greek | Organization |
 |:-----:|:-------|:------|:-------------|
@@ -65,4 +65,4 @@ For a system-wide overview, see [meta-organvm](https://github.com/meta-organvm).
 
 ---
 
-<sub>ORGAN V: Logos &mdash; part of the eight-organ creative-institutional system &mdash; [@4444j99](https://github.com/4444j99)</sub>
+<sub>ORGAN V: Logos &mdash; 2 repositories, 16 essays &mdash; part of the eight-organ creative-institutional system &mdash; [@4444j99](https://github.com/4444j99) &mdash; CONSOLIDATION-II Sprint 2026-02-12</sub>

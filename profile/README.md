@@ -4,6 +4,8 @@
 
 # ORGAN V: Logos — Public Process
 
+_Essays, case studies, and methodology documentation_
+
 > *λόγος — word, speech, reason*
 
 **The organ that works in the open. Essays, transparent methodology, and building in public.**

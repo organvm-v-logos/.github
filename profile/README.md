@@ -10,7 +10,7 @@ _Essays, case studies, and methodology documentation_
 
 **The organ that works in the open. Essays, transparent methodology, and building in public.**
 
-**2 repositories · 16 published essays · [Read the essays →](https://organvm-v-logos.github.io/public-process/)**
+**6 repositories · 40 published essays · ~130K words · [Read the essays →](https://organvm-v-logos.github.io/public-process/)**
 
 </div>
 
@@ -41,10 +41,14 @@ This is not performative openness. ORGAN-V publishes because the process of buil
 
 | Repository | Description | Status |
 |:-----------|:------------|:------:|
-| [**public-process**](https://github.com/organvm-v-logos/public-process) | Flagship essay series — 16 published essays on methodology, architecture, and building-in-public | ![Deployed](https://img.shields.io/badge/status-deployed-brightgreen?style=flat-square) |
+| [**public-process**](https://github.com/organvm-v-logos/public-process) | Flagship essay series — 40 published essays (~130K words) on methodology, architecture, and building-in-public | ![Deployed](https://img.shields.io/badge/status-deployed-brightgreen?style=flat-square) |
+| [**essay-pipeline**](https://github.com/organvm-v-logos/essay-pipeline) | Essay automation engine: monitor, narrator, validator, indexer | ![Active](https://img.shields.io/badge/status-active-blue?style=flat-square) |
+| [**analytics-engine**](https://github.com/organvm-v-logos/analytics-engine) | Engagement tracking: GoatCounter integration, metrics aggregation, dashboards | ![Active](https://img.shields.io/badge/status-active-blue?style=flat-square) |
+| [**editorial-standards**](https://github.com/organvm-v-logos/editorial-standards) | Voice guide, quality rubrics, essay templates, frontmatter schema spec | ![Active](https://img.shields.io/badge/status-active-blue?style=flat-square) |
+| [**reading-observatory**](https://github.com/organvm-v-logos/reading-observatory) | Curated reading lists, bibliography management, RSS feed aggregation | ![Active](https://img.shields.io/badge/status-active-blue?style=flat-square) |
 | [.github](https://github.com/organvm-v-logos/.github) | Org profile and community health files | Infrastructure |
 
-The `public-process` repository is the primary venue for ORGAN-V content. It houses long-form essays (3,000-5,000 words), shorter marginalia, and structured process documentation organized by phase and topic. Its Jekyll site with RSS is live at **[organvm-v-logos.github.io/public-process](https://organvm-v-logos.github.io/public-process/)**.
+The `public-process` repository is the primary venue for ORGAN-V content. It houses 40 long-form essays (2,000-5,000 words each, ~130K words total), organized by category (meta-system, case study, retrospective, guide). Its Jekyll site with RSS is live at **[organvm-v-logos.github.io/public-process](https://organvm-v-logos.github.io/public-process/)**. The four supporting repos provide autonomous essay pipeline automation (`essay-pipeline`), privacy-first engagement analytics (`analytics-engine`), editorial governance (`editorial-standards`), and curated intellectual context (`reading-observatory`).
 
 ## How ORGAN-V Fits the System
 
@@ -67,4 +71,4 @@ For a system-wide overview, see [meta-organvm](https://github.com/meta-organvm).
 
 ---
 
-<sub>ORGAN V: Logos &mdash; 2 repositories, 16 essays &mdash; part of the eight-organ creative-institutional system &mdash; [@4444j99](https://github.com/4444j99) &mdash; CONSOLIDATION-II Sprint 2026-02-12</sub>
+<sub>ORGAN V: Logos &mdash; 6 repositories, 40 essays, ~130K words &mdash; part of the eight-organ creative-institutional system &mdash; [@4444j99](https://github.com/4444j99) &mdash; LOGOS Sprint 2026-02-17</sub>

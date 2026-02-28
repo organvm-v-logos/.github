@@ -10,6 +10,8 @@ on:
       - distribution-requested
       - governance-updated
       - system-graph-updated
+      - feeds-updated
+      - metrics-updated
 
 jobs:
   handle:
@@ -30,3 +32,15 @@ jobs:
         if: github.event.action == 'governance-updated'
         run: |
           echo "Governance rules updated — compliance check needed"
+
+      - name: Handle feeds update
+        if: github.event.action == 'feeds-updated'
+        run: |
+          echo "Feed aggregation completed"
+          echo "Date: ${{ github.event.client_payload.date }}"
+
+      - name: Handle metrics update
+        if: github.event.action == 'metrics-updated'
+        run: |
+          echo "Metrics collection completed"
+          echo "Date: ${{ github.event.client_payload.date }}"

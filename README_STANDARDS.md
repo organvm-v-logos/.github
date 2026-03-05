@@ -1,16 +1,16 @@
-# README Standards
+# README Standards Overlay (ORGAN-V Logos)
 
-Canonical README standards for all repositories in `organvm-v-logos`.
+This document is an organ-level overlay for README policy in `organvm-v-logos`.
 
-## Canonical Location
+## Canonical Upstream
 
-This file in `.github` is the source of truth for README standards for this org.
+Canonical full standards live in:
+- `meta-organvm/.github/README_STANDARDS.md`
 
-If this policy is later promoted across multiple organs, upstream it to
-`meta-organvm/.github` and keep this file as a mirror with an explicit link to
-the upstream canonical policy.
+This overlay can add stricter local requirements but cannot weaken upstream
+requirements.
 
-## Profiles
+## Local Profiles
 
 Use the profile that matches the repository type.
 
@@ -19,7 +19,7 @@ Use the profile that matches the repository type.
 Required:
 - `#` title
 - `## Included Governance Assets`
-- Links to org-level governance docs (for example branch protection baseline)
+- links to org governance docs (for example branch protection baseline)
 
 ### Profile B: Flagship Narrative Repo (`public-process`)
 
@@ -39,8 +39,8 @@ Applies to:
 
 Required:
 - `#` title
-- One context section: `## Overview` or `## Current State` or `## Introduction`
-- One execution section: `## Development` or `## Setup` or `## Getting Started`
+- one context section: `## Overview` or `## Current State` or `## Introduction`
+- one execution section: `## Development` or `## Setup` or `## Getting Started`
 
 Recommended:
 - `## Architecture`
@@ -49,11 +49,11 @@ Recommended:
 
 ## Enforcement
 
-The minimum required items above are enforced by:
+Local minimum checks are enforced by:
 
 ```bash
 ./tools/audit_platform_standards.sh
 ```
 
-Any violation should be fixed in the same PR or tracked in a linked issue with
-an owner and due date.
+Violations must be fixed in the same PR or tracked in a linked issue with owner
+and due date.

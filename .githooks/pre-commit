@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+CHANGED="$(git diff --cached --name-only)"
+
+if ! printf '%s\n' "$CHANGED" | grep -Eq '^(\.github/|README\.md|CONTRIBUTING\.md|SECURITY\.md)'; then
+    exit 0
+fi
+
+echo "[pre-commit] .github policy checks"
+
+python3 - <<'PY'
+from pathlib import Path
+import sys
+import yaml
+
+root = Path.cwd()
+errors = []
+for workflow in sorted((root / ".github" / "workflows").glob("*.yml")):
+    try:
+        yaml.safe_load(workflow.read_text(encoding="utf-8"))
+    except Exception as exc:  # noqa: BLE001
+        errors.append(f"{workflow.name}: {exc}")
+
+for tmpl in sorted((root / ".github" / "ISSUE_TEMPLATE").glob("*.md")):
+    text = tmpl.read_text(encoding="utf-8")
+    if not text.startswith("---"):
+        errors.append(f"{tmpl.name}: missing YAML frontmatter block")
+
+if errors:
+    for err in errors:
+        print(err)
+    sys.exit(1)
+PY

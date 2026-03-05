@@ -16,3 +16,6 @@ Brief description of the changes.
 - [ ] I have performed a self-review
 - [ ] I have added tests that prove my fix/feature works
 - [ ] New and existing tests pass locally
+- [ ] I ran the relevant repo validation command(s)
+- [ ] No secrets or credentials were added
+- [ ] Related issue is linked with explicit acceptance criteria

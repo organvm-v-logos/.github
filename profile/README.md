@@ -72,3 +72,15 @@ For a system-wide overview, see [meta-organvm](https://github.com/meta-organvm).
 ---
 
 <sub>ORGAN V: Logos &mdash; 6 repositories, 40 essays, ~130K words &mdash; part of the eight-organ creative-institutional system &mdash; [@4444j99](https://github.com/4444j99) &mdash; LOGOS Sprint 2026-02-17</sub>
+
+<!-- PORTFOLIO-HUB-START -->
+---
+
+<div align="center">
+
+**Explore the System**
+
+[Portfolio](https://4444j99.github.io/portfolio/) · [System Directory](https://4444j99.github.io/portfolio/directory/) · [49 Essays](https://organvm-v-logos.github.io/public-process/) · [Knowledge Base](https://organvm-i-theoria.github.io/my-knowledge-base/) · [Consult](https://4444j99.github.io/portfolio/consult/)
+
+</div>
+<!-- PORTFOLIO-HUB-END -->

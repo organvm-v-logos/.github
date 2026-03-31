@@ -20,6 +20,13 @@ This organization covers: Essays, process documentation, methodology writing.
 4. **Write tests** — maintain or improve coverage
 5. **Submit a PR** with clear description of changes
 
+### First-Time Contribution Path
+
+1. Pick an issue labeled `good first issue`.
+2. Confirm scope, validation commands, and acceptance criteria before coding.
+3. Keep changes focused; avoid cross-repo refactors on first contribution.
+4. Run local validation commands listed in the issue/README.
+
 ### What We Accept
 
 - Bug fixes with tests
@@ -42,11 +49,18 @@ Essay contributions must include YAML frontmatter (title, author, date, tags, ca
 - Python: PEP 8, type hints, f-strings
 - Tests required for all new functionality
 - Commit messages: imperative mood, <72 chars title
+- README structure must follow [README standards](README_STANDARDS.md)
 
 ## Getting Help
 
 - Open an Issue for questions
 - Check existing documentation in each repo's README
+
+## Review Service Targets
+
+- Initial maintainer response: within 3 business days
+- Review response after updates: within 3 business days
+- Merge decision after approval: within 2 business days
 
 ---
 

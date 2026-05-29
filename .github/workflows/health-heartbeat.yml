@@ -10,11 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+      actions: read
+      pull-requests: read
 
     steps:
       - name: Check pipeline health
         env:
-          GH_TOKEN: ${{ secrets.CROSS_ORG_DISPATCH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           FAILURES=""
           WEEK_AGO=$(date -u -v-7d +%Y-%m-%dT00:00:00Z 2>/dev/null || date -u -d "7 days ago" +%Y-%m-%dT00:00:00Z)

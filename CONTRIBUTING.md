@@ -33,7 +33,7 @@ This organization covers: Essays, process documentation, methodology writing.
 - Documentation improvements
 - Performance optimizations
 - Security patches (see [SECURITY.md](SECURITY.md))
-- Feature proposals via Issues (discuss before implementing)
+- Feature proposals — float the idea in [Discussions](https://github.com/organvm-v-logos/.github/discussions) first, then open an Issue once there's a concrete plan
 
 ### What Requires Discussion First
 
@@ -53,7 +53,8 @@ Essay contributions must include YAML frontmatter (title, author, date, tags, ca
 
 ## Getting Help
 
-- Open an Issue for questions
+- Start a thread in [GitHub Discussions](https://github.com/organvm-v-logos/.github/discussions) for questions, ideas, or open-ended conversation
+- Open an Issue only for concrete bugs or actionable feature requests
 - Check existing documentation in each repo's README
 
 ## Review Service Targets

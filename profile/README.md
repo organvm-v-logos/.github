@@ -12,6 +12,10 @@ _Essays, case studies, and methodology documentation_
 
 **6 repositories · 40 published essays · ~130K words · [Read the essays →](https://organvm-v-logos.github.io/public-process/)**
 
+[![Join the Discussion](https://img.shields.io/badge/💬_Community-Discussions-0d47a1?style=flat-square)](https://github.com/organvm-v-logos/.github/discussions)
+
+_Building in public is a two-way street — **[join the conversation in Discussions →](https://github.com/organvm-v-logos/.github/discussions)**_
+
 </div>
 
 ---
@@ -49,6 +53,22 @@ This is not performative openness. ORGAN-V publishes because the process of buil
 | [.github](https://github.com/organvm-v-logos/.github) | Org profile and community health files | Infrastructure |
 
 The `public-process` repository is the primary venue for ORGAN-V content. It houses 40 long-form essays (2,000-5,000 words each, ~130K words total), organized by category (meta-system, case study, retrospective, guide). Its Jekyll site with RSS is live at **[organvm-v-logos.github.io/public-process](https://organvm-v-logos.github.io/public-process/)**. The four supporting repos provide autonomous essay pipeline automation (`essay-pipeline`), privacy-first engagement analytics (`analytics-engine`), editorial governance (`editorial-standards`), and curated intellectual context (`reading-observatory`).
+
+## Join the Conversation
+
+ORGAN-V publishes in the open, and the conversation around that work belongs in the
+open too. **[GitHub Discussions](https://github.com/organvm-v-logos/.github/discussions)**
+is the community square for the organization:
+
+- **💡 Ideas** — propose essay topics, methodology experiments, or system directions
+- **🙋 Q&A** — ask about the architecture, the essays, or how to contribute
+- **📣 Show & tell** — share what you're building or how the work influenced yours
+- **💬 General** — open-ended conversation about building in public
+
+Discussions complements — rather than replaces — the existing channels: use
+[Issues](https://github.com/organvm-v-logos/.github/issues) for concrete bugs and
+feature requests, and Discussions for everything open-ended. This is the place to
+talk back; the project is no longer broadcast-only.
 
 ## How ORGAN-V Fits the System
 

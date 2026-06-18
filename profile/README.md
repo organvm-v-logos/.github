@@ -50,6 +50,58 @@ This is not performative openness. ORGAN-V publishes because the process of buil
 
 The `public-process` repository is the primary venue for ORGAN-V content. It houses 40 long-form essays (2,000-5,000 words each, ~130K words total), organized by category (meta-system, case study, retrospective, guide). Its Jekyll site with RSS is live at **[organvm-v-logos.github.io/public-process](https://organvm-v-logos.github.io/public-process/)**. The four supporting repos provide autonomous essay pipeline automation (`essay-pipeline`), privacy-first engagement analytics (`analytics-engine`), editorial governance (`editorial-standards`), and curated intellectual context (`reading-observatory`).
 
+## Architecture Overview
+
+The arrows below show dependency and information flow, not ownership. ORGAN-V receives raw material from the broader system, turns it into accountable public narrative, and routes reception data back into editorial practice.
+
+```mermaid
+flowchart LR
+    subgraph System["organvm system context"]
+        Meta["VIII / Meta<br/>directory, governance, standards"]
+        Theory["I / Theory<br/>frameworks and knowledge base"]
+        Art["II / Art<br/>artifacts and practice"]
+        Commerce["III / Commerce<br/>offers and delivery"]
+        Taxis["IV / Taxis<br/>orchestration signals"]
+        Community["VI / Community<br/>questions and reception"]
+        Kerygma["VII / Marketing<br/>campaign adaptation"]
+    end
+
+    subgraph Logos["V / Logos repositories"]
+        GitHub[".github<br/>org profile and defaults"]
+        Standards["editorial-standards<br/>voice, schema, rubrics"]
+        Reading["reading-observatory<br/>sources and context"]
+        Pipeline["essay-pipeline<br/>detect, draft, validate, index"]
+        Public["public-process<br/>essays, RSS, Jekyll site"]
+        Analytics["analytics-engine<br/>privacy-first metrics"]
+    end
+
+    Meta --> GitHub
+    Meta --> Standards
+    Theory --> Standards
+    Theory --> Reading
+    Theory --> Pipeline
+    Art --> Pipeline
+    Commerce --> Pipeline
+    Taxis --> Pipeline
+    Reading --> Pipeline
+    Standards --> Pipeline
+    Pipeline --> Public
+    Public --> Analytics
+    Analytics --> Standards
+    Analytics --> Pipeline
+    Public --> Community
+    Community --> Pipeline
+    Public --> Kerygma
+    Kerygma --> Analytics
+```
+
+In practice:
+
+- **System organs create the work.** Theory, art, commerce, and orchestration generate frameworks, artifacts, offers, and events worth documenting.
+- **Logos turns work into public account.** `editorial-standards` defines the quality bar, `reading-observatory` supplies intellectual context, and `essay-pipeline` moves material toward publication.
+- **`public-process` is the main publication surface.** It hosts the essays, RSS feed, and Jekyll site that make the system legible outside the repos.
+- **Feedback closes the loop.** `analytics-engine`, ORGAN-VI community reception, and ORGAN-VII campaign reuse feed evidence back into future editorial choices.
+
 ## How ORGAN-V Fits the System
 
 The organvm system distributes creative and institutional work across eight specialized organs — 81 repositories, ~320K words of documentation. ORGAN-V occupies a unique position: it is the organ that **observes and narrates** the work of all the others.

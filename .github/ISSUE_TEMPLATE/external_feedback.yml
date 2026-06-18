@@ -1,0 +1,62 @@
+name: "External Feedback"
+description: "Share substantive feedback on an essay, the methodology, or the system. We log qualifying feedback publicly."
+title: "[FEEDBACK] "
+labels: ["feedback", "external-validation"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for engaging with ORGAN-V (Public Process). This organ builds in
+        the open, and substantive outside feedback is one of the milestones we
+        track honestly in
+        [docs/external-validation](https://github.com/organvm-v-logos/.github/tree/main/docs/external-validation).
+
+        Reactions and stars are welcome but are *engagement*, not feedback —
+        this form is for a real reaction, question, critique, or correction.
+  - type: input
+    id: subject
+    attributes:
+      label: What are you responding to?
+      description: An essay title/URL, a specific claim, the methodology, or the system as a whole.
+      placeholder: "Essay: 'Why Build in Public' — the claim that process is product"
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your feedback
+      description: What worked, what didn't, what you'd challenge, or what it made you think. A few specific sentences beat a paragraph of praise.
+      placeholder: "The argument in section 3 assumes X, but in my experience…"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of feedback
+      options:
+        - Critique / disagreement
+        - Question
+        - Correction / factual note
+        - Praise with specifics
+        - Suggestion / idea
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: attribution
+    attributes:
+      label: How may we attribute you? (optional)
+      description: A name or handle for the public feedback ledger. Leave blank to stay anonymous (we may then count it only if otherwise verifiable).
+      placeholder: "@yourhandle"
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I am not the creator of this project and not an automated agent within the organvm system.
+          required: true
+        - label: I consent to this feedback being quoted/linked in the public feedback ledger.
+          required: true

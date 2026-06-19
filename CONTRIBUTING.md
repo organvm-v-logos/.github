@@ -1,67 +1,59 @@
-# Contributing to ORGAN-V: Public Process (Logos)
+# Contributing
 
-Thank you for your interest in contributing to the organvm system.
+Thanks for your interest in contributing! This organization publishes essays,
+process documentation, and methodology writing, along with the automation that
+supports them. Contributions of all sizes are welcome — typo fixes, docs, bug
+fixes, and new ideas.
 
-## Code of Conduct
+By participating, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-All participants are governed by our [Code of Conduct](CODE_OF_CONDUCT.md).
+## Ways to contribute
 
-## How to Contribute
+- **Report a bug or suggest an idea** — open an [issue](../../issues). For
+  anything large (a new essay topic, a change to the publishing workflow, an
+  editorial policy update), open an issue to discuss it before writing code.
+- **Pick up existing work** — issues labeled `good first issue` are a great
+  starting point.
+- **Open a pull request** — see the workflow below.
+- **Report a security vulnerability** — please follow [SECURITY.md](SECURITY.md)
+  instead of opening a public issue.
 
-### Scope
+## Pull request workflow
 
-This organization covers: Essays, process documentation, methodology writing.
+1. **Fork** the repository and create a branch from `main`.
+2. **Make your change.** Match the style of the surrounding code or prose, and
+   keep the change focused — smaller PRs are easier to review and merge.
+3. **Run the repo's checks** (tests, lint, build) if it has them. Each repo's
+   `README` lists its setup and validation commands.
+4. **Open a pull request** with a clear description of what changed and why.
+   Link any related issue.
 
-### Getting Started
+A maintainer will review and may suggest changes before merging. We aim to give
+an initial response within a few business days; please be patient if it takes a
+little longer.
 
-1. **Fork** the target repository
-2. **Create a branch** (`feature/your-feature` or `fix/your-fix`)
-3. **Follow existing code style** — check each repo's README for stack details
-4. **Write tests** — maintain or improve coverage
-5. **Submit a PR** with clear description of changes
+## Style guidelines
 
-### First-Time Contribution Path
+These are conventions, not gates — follow them where they apply, and ask if
+you're unsure.
 
-1. Pick an issue labeled `good first issue`.
-2. Confirm scope, validation commands, and acceptance criteria before coding.
-3. Keep changes focused; avoid cross-repo refactors on first contribution.
-4. Run local validation commands listed in the issue/README.
+- **Commits** — write clear messages in the imperative mood ("Fix typo in
+  intro"), with a title under ~72 characters.
+- **TypeScript** — strict mode, named exports, `async/await`.
+- **Python** — PEP 8, type hints, f-strings.
+- **READMEs** — follow the [README standards](README_STANDARDS.md).
+- **Essays** — include the YAML frontmatter described in the publishing guide
+  (title, author, date, tags, category, excerpt, and the other fields listed
+  there).
+- **Tests** — if you change code that has tests, please keep them passing and
+  add coverage for new behavior.
 
-### What We Accept
+## Getting help
 
-- Bug fixes with tests
-- Documentation improvements
-- Performance optimizations
-- Security patches (see [SECURITY.md](SECURITY.md))
-- Feature proposals via Issues (discuss before implementing)
-
-### What Requires Discussion First
-
-- New essay topics, changes to publishing workflow, editorial policy updates
-
-## Licensing
-
-Essay contributions must include YAML frontmatter (title, author, date, tags, category, excerpt, portfolio_relevance, related_repos, reading_time, word_count). See the publishing guide for details.
-
-## Development Standards
-
-- TypeScript: strict mode, named exports, async/await
-- Python: PEP 8, type hints, f-strings
-- Tests required for all new functionality
-- Commit messages: imperative mood, <72 chars title
-- README structure must follow [README standards](README_STANDARDS.md)
-
-## Getting Help
-
-- Open an Issue for questions
-- Check existing documentation in each repo's README
-
-## Review Service Targets
-
-- Initial maintainer response: within 3 business days
-- Review response after updates: within 3 business days
-- Merge decision after approval: within 2 business days
+- Open an [issue](../../issues) with any question.
+- Check the relevant repo's `README` — it's the source of truth for that repo's
+  setup and workflow.
 
 ---
 
-*Part of the [organvm eight-organ system](https://github.com/meta-organvm)*
+*Part of the [organvm system](https://github.com/meta-organvm).*

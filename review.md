@@ -24,6 +24,7 @@
 4. **#6: External contributor outreach**
    - **Decision: SCALE**
    - Rationale: The outreach resulted in our first real external PRs. The cycle time is under 14 days. We will allocate more weekly hours to proactive outreach.
+   - Evidence ledger: [`docs/logos/external-contributor-outreach-2026.md`](docs/logos/external-contributor-outreach-2026.md)
 
 5. **#7: External validation milestones**
    - **Decision: MAINTAIN**

@@ -15,6 +15,7 @@
 2. **#4: Weekly signals triage ritual**
    - **Decision: MAINTAIN**
    - Rationale: The ritual is healthy and publish-to-remediation latency is holding at ~6 days. It requires no additional resources but must not be abandoned.
+   - Decision record: [`docs/signals-triage/`](docs/signals-triage/README.md) — ritual definition plus the [weekly triage log](docs/signals-triage/triage-log.md) (W1–W14).
 
 3. **#5: Controlled distribution/conversion experiments**
    - **Decision: CUT**

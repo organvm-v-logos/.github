@@ -51,9 +51,11 @@ Recommended:
 
 Local minimum checks are enforced by:
 
-```bash
-./tools/audit_platform_standards.sh
-```
+- `.githooks/pre-commit` — validates workflow YAML and issue-template
+  frontmatter on every commit that touches `.github/`, `README.md`,
+  `CONTRIBUTING.md`, or `SECURITY.md`. Enable with `git config core.hooksPath .githooks`.
+- The `ci-minimal.yml` workflow's `validate` job — checks README presence,
+  `seed.yaml` validity, and runs a secret scan on each push and pull request.
 
 Violations must be fixed in the same PR or tracked in a linked issue with owner
 and due date.

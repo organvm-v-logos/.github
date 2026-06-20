@@ -14,3 +14,4 @@ repository to clone first and how to run things locally.
 - [Branch protection baseline](BRANCH_PROTECTION_BASELINE.md)
 - [README standards](README_STANDARDS.md)
 - [2026 distribution/conversion experiment synthesis](docs/logos/distribution-conversion-experiments-2026.md)
+- [Activation audit (2026-06-19)](docs/activation-audit-2026.md) — honest account of what is actually live

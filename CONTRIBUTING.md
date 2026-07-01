@@ -1,59 +1,36 @@
 # Contributing
 
-Thanks for your interest in contributing! This organization publishes essays,
-process documentation, and methodology writing, along with the automation that
-supports them. Contributions of all sizes are welcome — typo fixes, docs, bug
-fixes, and new ideas.
+Thanks for your interest in contributing. This repository contains organization
+profile and community health files, including shared documentation, templates,
+and policy files.
 
 By participating, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Ways to contribute
 
-- **Report a bug or suggest an idea** — open an [issue](../../issues). For
-  anything large (a new essay topic, a change to the publishing workflow, an
-  editorial policy update), open an issue to discuss it before writing code.
-- **Pick up existing work** — issues labeled `good first issue` are a great
-  starting point.
-- **Open a pull request** — see the workflow below.
-- **Report a security vulnerability** — please follow [SECURITY.md](SECURITY.md)
-  instead of opening a public issue.
+- Report a bug or suggest an improvement by opening an [issue](../../issues).
+- Fix a typo, update documentation, or improve a template with a pull request.
+- For larger changes, open an issue first so maintainers can discuss the
+  direction before you spend time on implementation.
+- To report a security vulnerability, follow [SECURITY.md](SECURITY.md) instead
+  of opening a public issue.
 
 ## Pull request workflow
 
-1. **Fork** the repository and create a branch from `main`.
-2. **Make your change.** Match the style of the surrounding code or prose, and
-   keep the change focused — smaller PRs are easier to review and merge.
-3. **Run the repo's checks** (tests, lint, build) if it has them. Each repo's
-   `README` lists its setup and validation commands.
-4. **Open a pull request** with a clear description of what changed and why.
-   Link any related issue.
+1. Fork the repository and create a branch from `main`.
+2. Make a focused change. Keep pull requests small when possible.
+3. Run any relevant checks listed in the `README`. If there are no checks, or
+   you could not run them, note that in the pull request.
+4. Open a pull request with a clear description of what changed and why. Link
+   any related issue.
+5. Respond to review comments if maintainers request changes.
 
-A maintainer will review and may suggest changes before merging. We aim to give
-an initial response within a few business days; please be patient if it takes a
-little longer.
+Maintainers will review pull requests as time allows. Once a pull request is
+approved and any required checks pass, a maintainer will merge it.
 
-## Style guidelines
+## Questions
 
-These are conventions, not gates — follow them where they apply, and ask if
-you're unsure.
-
-- **Commits** — write clear messages in the imperative mood ("Fix typo in
-  intro"), with a title under ~72 characters.
-- **TypeScript** — strict mode, named exports, `async/await`.
-- **Python** — PEP 8, type hints, f-strings.
-- **READMEs** — follow the [README standards](README_STANDARDS.md).
-- **Essays** — include the YAML frontmatter described in the publishing guide
-  (title, author, date, tags, category, excerpt, and the other fields listed
-  there).
-- **Tests** — if you change code that has tests, please keep them passing and
-  add coverage for new behavior.
-
-## Getting help
-
-- Open an [issue](../../issues) with any question.
-- Check the relevant repo's `README` — it's the source of truth for that repo's
-  setup and workflow.
-
----
+If you are not sure where to start, open an [issue](../../issues) with your
+question or ask on the pull request.
 
 *Part of the [organvm system](https://github.com/meta-organvm).*

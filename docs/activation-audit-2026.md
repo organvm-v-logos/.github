@@ -44,7 +44,7 @@ real?**
 | --- | --- | --- |
 | `profile/README.md` | LIVE | Org-profile surface; substantive, renders publicly |
 | `README.md` | LIVE | Repo landing; links the governance assets |
-| `CONTRIBUTING.md` | LIVE | Standard fork → branch → PR workflow, 59 lines |
+| `CONTRIBUTING.md` | LIVE | Standard fork → branch → PR workflow |
 | `CODE_OF_CONDUCT.md` | LIVE | 78 lines |
 | `SECURITY.md` | LIVE | Advisory + email path, response timeline |
 | `QUICK_START.md` | LIVE | Newcomer entry point, linked from both READMEs |

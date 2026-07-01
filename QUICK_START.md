@@ -73,13 +73,9 @@ README — it is authoritative if it differs from the above.
 ### Code / automation repos
 
 `essay-pipeline`, `analytics-engine`, and `reading-observatory` are code
-repositories. Per the [contribution standards](CONTRIBUTING.md) they use:
-
-- **TypeScript** — strict mode, named exports, `async/await`
-- **Python** — PEP 8, type hints, f-strings
-
-After installing dependencies, run the repo's test command (listed in its
-README) to confirm a working local setup before making changes.
+repositories. Use each repo's `README` as the source of truth for setup, style,
+and checks. After installing dependencies, run the test or lint command listed
+there before making changes.
 
 ---
 
@@ -88,20 +84,20 @@ README) to confirm a working local setup before making changes.
 Once you can run things locally:
 
 1. Pick an issue labeled **`good first issue`**.
-2. Confirm scope, validation commands, and acceptance criteria before coding.
-3. Fork → branch (`feature/your-feature` or `fix/your-fix`) → keep changes focused.
+2. Fork the repo and create a branch from `main`.
+3. Make a focused change.
 4. Run the repo's local validation commands.
-5. Open a PR with a clear description.
+5. Open a pull request with a clear description.
 
-Full details — accepted change types, review SLAs, development standards — are in
-**[CONTRIBUTING.md](CONTRIBUTING.md)**.
+See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the standard pull request
+workflow.
 
 ---
 
 ## Where to go next
 
 - **[Organization profile](profile/README.md)** — what ORGAN-V is and how it fits the eight-organ system
-- **[CONTRIBUTING.md](CONTRIBUTING.md)** — full contribution workflow and standards
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** — contribution workflow
 - **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)** — community expectations
 - **[SECURITY.md](SECURITY.md)** — reporting vulnerabilities
 - **[README standards](README_STANDARDS.md)** — README structure each repo follows

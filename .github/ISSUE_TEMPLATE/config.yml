@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Ask or discuss with the community
+    url: https://github.com/organvm/dot-github--logos/discussions
+    about: "Use GitHub Discussions for questions, open-ended ideas, reception notes, and community conversation"
   - name: ORGAN System Documentation
     url: https://github.com/meta-organvm/organvm-corpvs-testamentvm
     about: "Full system documentation and governance corpus"

@@ -19,6 +19,10 @@ _Essays, case studies, and methodology documentation_
 > **New here?** The **[Quick Start guide](../QUICK_START.md)** tells you which
 > repository to clone first and how to run it locally.
 
+> **Want to talk back?** Start with
+> [GitHub Discussions](https://github.com/organvm/dot-github--logos/discussions)
+> for questions, community reception, and open-ended feedback.
+
 ## What Is ORGAN-V?
 
 ORGAN-V is the public-facing process layer of the [organvm system](https://github.com/meta-organvm) — an eight-organ creative-institutional architecture spanning theory, art, commerce, orchestration, community, marketing, and meta-governance.

@@ -24,7 +24,10 @@ linkable source.
 - **Engagement ≠ feedback.** Stars, follows, reactions, and pageviews are tracked
   in [analytics-engine](https://github.com/organvm-v-logos/analytics-engine), not
   here.
-- To submit feedback, open an
-  [External Feedback issue](https://github.com/organvm-v-logos/.github/issues/new?template=external_feedback.yml).
+- To submit feedback, start a
+  [GitHub Discussion](https://github.com/organvm/dot-github--logos/discussions)
+  or open an
+  [External Feedback issue](https://github.com/organvm/dot-github--logos/issues/new?template=external_feedback.yml)
+  when the feedback is already specific and actionable.
 - When transcribing private feedback (e.g. email), record it only with the
   author's permission and link/quote the minimal verifiable excerpt.

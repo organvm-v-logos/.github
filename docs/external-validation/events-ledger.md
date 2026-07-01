@@ -15,7 +15,7 @@ record (thread, transcript, recording, recap, or attendee list).
 | — | — | — | — | — | _No event hosted yet._ | — |
 
 <!-- TEMPLATE ROW:
-| 1 | 2026-06-25 | Office hours (Discussions) | https://github.com/orgs/organvm-v-logos/discussions/NN | 3 | Thread + written recap | @maintainer |
+| 1 | 2026-06-25 | Office hours (Discussions) | https://github.com/organvm/dot-github--logos/discussions/NN | 3 | Thread + written recap | @maintainer |
 -->
 
 ## Hosting playbook (lowest-friction path)
@@ -23,7 +23,9 @@ record (thread, transcript, recording, recap, or attendee list).
 The cheapest event to host with a verifiable record is a **GitHub Discussions
 office-hours / AMA thread**:
 
-1. Enable Discussions on a public org repo (e.g. `public-process`) if not already.
+1. Use this repo's
+   [GitHub Discussions](https://github.com/organvm/dot-github--logos/discussions)
+   as the durable thread surface.
 2. Open a pinned thread: *"Open office hours — ask me anything about building an
    eight-organ system in public."* State a window (e.g. a 48-hour async AMA, or a
    live 1-hour slot) and a clear invitation.

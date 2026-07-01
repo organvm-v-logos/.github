@@ -77,12 +77,14 @@ secrets or full PII) in [revenue-ledger.md](revenue-ledger.md).
 
 ## How an external actor contributes
 
-- **Feedback:** open a
-  [Feedback issue](https://github.com/organvm-v-logos/.github/issues/new?template=external_feedback.yml)
-  or comment on any essay thread. Maintainer transcribes qualifying feedback
-  into the ledger.
-- **Events:** watch the org for announced sessions, or propose one via a
-  Feedback issue.
+- **Feedback:** start a
+  [GitHub Discussion](https://github.com/organvm/dot-github--logos/discussions)
+  or open a
+  [Feedback issue](https://github.com/organvm/dot-github--logos/issues/new?template=external_feedback.yml)
+  when the feedback is already specific and actionable. Maintainer transcribes
+  qualifying feedback into the ledger.
+- **Events:** watch the Discussions board for announced sessions, or propose one
+  in Discussions.
 - **Revenue:** book a consult, sponsor, or tip — see the
   [Consult page](https://4444j99.github.io/portfolio/consult/).
 

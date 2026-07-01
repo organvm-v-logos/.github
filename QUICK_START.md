@@ -1,6 +1,7 @@
 # Quick Start
 
-A newcomer's entry point to **ORGAN-V: Logos** — the public-process layer of the
+A newcomer's entry point for `organvm/dot-github--logos` and the wider
+**ORGAN-V: Logos** repository set — the public-process layer of the
 [organvm system](https://github.com/meta-organvm). This guide answers the two
 questions people ask first: **which repository do I clone?** and **how do I run
 it locally?**
@@ -17,7 +18,22 @@ Use issues for scoped bugs, documentation fixes, or implementation requests.
 ## 1. Which repository do I clone first?
 
 There is no single "main" repo to clone — ORGAN-V is a small constellation of
-repositories, each with one job. Pick the one that matches your goal:
+repositories, each with one job. Pick the one that matches your goal.
+
+**If you are here from an issue in `organvm/dot-github--logos`, clone this
+repository first:**
+
+```bash
+git clone https://github.com/organvm/dot-github--logos.git
+cd dot-github--logos
+```
+
+This repo owns the organization profile, community health files, issue/PR
+templates, lightweight workflows, and this guide. It is the right starting point
+for documentation and governance issues filed here.
+
+If you are trying to understand or edit ORGAN-V's published work, start with
+`public-process` instead:
 
 | I want to… | Clone this repo | Stack |
 |:-----------|:----------------|:------|
@@ -26,7 +42,7 @@ repositories, each with one job. Pick the one that matches your goal:
 | **Work on engagement analytics** (GoatCounter, metrics, dashboards) | [`analytics-engine`](https://github.com/organvm-v-logos/analytics-engine) | Code/automation |
 | **Update voice guide, rubrics, or frontmatter schema** | [`editorial-standards`](https://github.com/organvm-v-logos/editorial-standards) | Docs + schemas |
 | **Curate reading lists / RSS feeds** | [`reading-observatory`](https://github.com/organvm-v-logos/reading-observatory) | Code/automation |
-| **Change org-wide governance** (templates, this guide) | [`.github`](https://github.com/organvm-v-logos/.github) | Governance |
+| **Change org-wide governance** (templates, this guide) | [`dot-github--logos`](https://github.com/organvm/dot-github--logos) | Governance/docs |
 
 **If you're just exploring and don't know where to start, clone
 [`public-process`](https://github.com/organvm-v-logos/public-process).** It is
@@ -41,6 +57,75 @@ picture of what this organ produces. The published site is at
 Every repository documents its own exact setup and validation commands in its
 `README.md`. **The repo README is always the source of truth** — start there
 after cloning. The patterns below get you moving.
+
+### This governance repo (`dot-github--logos`)
+
+This repository does not run a web app or local service. Most changes are
+Markdown, YAML, issue templates, or GitHub workflow files. To work locally:
+
+```bash
+git clone https://github.com/organvm/dot-github--logos.git
+cd dot-github--logos
+
+# If your Python does not already have PyYAML, use a local ignored venv.
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install PyYAML
+
+# Optional: enable the local policy hook used before commits.
+git config core.hooksPath .githooks
+
+# Run the same lightweight checks as CI.
+python3 - <<'PY'
+from pathlib import Path
+import re
+import sys
+import yaml
+
+errors = []
+
+if not Path("README.md").exists() and not Path("profile/README.md").exists():
+    errors.append("No README.md or profile/README.md found")
+
+if Path("seed.yaml").exists():
+    try:
+        yaml.safe_load(Path("seed.yaml").read_text(encoding="utf-8"))
+    except Exception as exc:
+        errors.append(f"seed.yaml is invalid YAML: {exc}")
+
+for workflow in sorted(Path(".github/workflows").glob("*.yml")):
+    try:
+        yaml.safe_load(workflow.read_text(encoding="utf-8"))
+    except Exception as exc:
+        errors.append(f"{workflow}: {exc}")
+
+for template in sorted(Path(".github/ISSUE_TEMPLATE").glob("*.md")):
+    if not template.read_text(encoding="utf-8").startswith("---"):
+        errors.append(f"{template}: missing YAML frontmatter block")
+
+secret_patterns = [
+    re.compile(r"sk-[a-zA-Z0-9]{20,}"),
+    re.compile(r"ghp_[a-zA-Z0-9]{36}"),
+    re.compile(r"AKIA[A-Z0-9]{16}"),
+]
+for path in Path(".").rglob("*"):
+    if ".git" in path.parts or ".github" in path.parts or not path.is_file():
+        continue
+    try:
+        text = path.read_text(encoding="utf-8")
+    except UnicodeDecodeError:
+        continue
+    for pattern in secret_patterns:
+        if pattern.search(text):
+            errors.append(f"{path}: potential secret pattern {pattern.pattern}")
+
+if errors:
+    print("\n".join(errors))
+    sys.exit(1)
+
+print("Local governance checks passed")
+PY
+```
 
 ### General pattern (any repo)
 

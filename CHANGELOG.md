@@ -5,6 +5,8 @@ All notable changes to the organvm-v-logos org-level community health files.
 ## [Unreleased]
 
 ### Added
+- Quick Start guide for issue #20, clarifying which Logos repository to clone
+  first and how to run local checks for this governance repo.
 - Activation audit (`docs/activation-audit-2026.md`) for issue #15 — verdict actually-live, ship now
 - 2026 distribution/conversion experiment synthesis for issue #5
 - Initial community health files (README, CONTRIBUTING, CODE_OF_CONDUCT, templates)

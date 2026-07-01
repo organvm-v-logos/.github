@@ -16,6 +16,14 @@ _Essays, case studies, and methodology documentation_
 
 ---
 
+## Plain English TL;DR
+
+ORGAN-V builds the public writing layer for the organvm project. It publishes
+essays about what the system is making, maintains tools that help draft and
+validate those essays, tracks lightweight readership signals, and keeps the
+editorial standards, reading lists, and GitHub profile that make the work easier
+to understand from the outside.
+
 > **New here?** The **[Quick Start guide](../QUICK_START.md)** tells you which
 > repository to clone first and how to run it locally.
 

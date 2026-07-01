@@ -59,21 +59,22 @@ The `public-process` repository is the primary venue for ORGAN-V content. It hou
 
 ## Architecture Overview
 
-The arrows below show dependency and information flow, not ownership. ORGAN-V receives raw material from the broader system, turns it into accountable public narrative, and routes reception data back into editorial practice.
+The arrows below show dependency and information flow, not ownership. Read it
+left to right: the wider system creates work and standards, the Logos
+repositories turn that material into public narrative, and reception data loops
+back into the next editorial cycle.
 
 ```mermaid
 flowchart LR
-    subgraph System["organvm system context"]
+    subgraph Sources["System sources"]
         Meta["VIII / Meta<br/>directory, governance, standards"]
         Theory["I / Theory<br/>frameworks and knowledge base"]
         Art["II / Art<br/>artifacts and practice"]
         Commerce["III / Commerce<br/>offers and delivery"]
         Taxis["IV / Taxis<br/>orchestration signals"]
-        Community["VI / Community<br/>questions and reception"]
-        Kerygma["VII / Marketing<br/>campaign adaptation"]
     end
 
-    subgraph Logos["V / Logos repositories"]
+    subgraph Logos["V / Logos repository map"]
         GitHub[".github<br/>org profile and defaults"]
         Standards["editorial-standards<br/>voice, schema, rubrics"]
         Reading["reading-observatory<br/>sources and context"]
@@ -82,8 +83,19 @@ flowchart LR
         Analytics["analytics-engine<br/>privacy-first metrics"]
     end
 
+    subgraph Reception["Reception and reuse"]
+        Readers["Readers<br/>GitHub, site, RSS"]
+        Community["VI / Community<br/>questions and reception"]
+        Kerygma["VII / Marketing<br/>campaign adaptation"]
+    end
+
     Meta --> GitHub
     Meta --> Standards
+    GitHub --> Standards
+    GitHub --> Reading
+    GitHub --> Pipeline
+    GitHub --> Public
+    GitHub --> Analytics
     Theory --> Standards
     Theory --> Reading
     Theory --> Pipeline
@@ -93,14 +105,26 @@ flowchart LR
     Reading --> Pipeline
     Standards --> Pipeline
     Pipeline --> Public
+    Public --> Readers
     Public --> Analytics
+    Public --> Community
+    Public --> Kerygma
+    Community --> Pipeline
+    Kerygma --> Analytics
     Analytics --> Standards
     Analytics --> Pipeline
-    Public --> Community
-    Community --> Pipeline
-    Public --> Kerygma
-    Kerygma --> Analytics
 ```
+
+### Repository Hand-Offs
+
+| Repository | Owns | Receives From | Hands Off To |
+|:-----------|:-----|:--------------|:-------------|
+| [.github](https://github.com/organvm-v-logos/.github) | Organization profile, community-health defaults, issue/PR templates | Meta-governance standards | Every Logos repository and first-time contributors |
+| [editorial-standards](https://github.com/organvm-v-logos/editorial-standards) | Voice guide, frontmatter schema, rubrics, templates | Meta standards, theory frameworks, analytics evidence | `essay-pipeline`, profile/README authors, essay contributors |
+| [reading-observatory](https://github.com/organvm-v-logos/reading-observatory) | Bibliography, feed watch, external intellectual context | Theory/knowledge work, curated sources | `essay-pipeline` and `public-process` essay context |
+| [essay-pipeline](https://github.com/organvm-v-logos/essay-pipeline) | Detection, drafting, validation, indexing automation | System events, reading context, editorial standards, community questions | `public-process` publication queue |
+| [public-process](https://github.com/organvm-v-logos/public-process) | Published essays, RSS, Jekyll site | Validated drafts and editorial standards | Readers, community discussion, marketing reuse, analytics |
+| [analytics-engine](https://github.com/organvm-v-logos/analytics-engine) | Privacy-first engagement metrics and profile/site evidence | `public-process`, campaign reuse, reader behavior | `editorial-standards` and `essay-pipeline` improvements |
 
 In practice:
 

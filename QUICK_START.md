@@ -8,6 +8,10 @@ it locally?**
 > New to the organ itself? Read the [organization profile](profile/README.md)
 > for what ORGAN-V is and why it exists. This guide is purely operational.
 
+Community questions and open-ended feedback belong in
+[GitHub Discussions](https://github.com/organvm/dot-github--logos/discussions).
+Use issues for scoped bugs, documentation fixes, or implementation requests.
+
 ---
 
 ## 1. Which repository do I clone first?
@@ -101,6 +105,7 @@ Full details — accepted change types, review SLAs, development standards — a
 ## Where to go next
 
 - **[Organization profile](profile/README.md)** — what ORGAN-V is and how it fits the eight-organ system
+- **[GitHub Discussions](https://github.com/organvm/dot-github--logos/discussions)** — community questions, reception notes, and open-ended feedback
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** — full contribution workflow and standards
 - **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)** — community expectations
 - **[SECURITY.md](SECURITY.md)** — reporting vulnerabilities

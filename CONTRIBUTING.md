@@ -9,6 +9,10 @@ By participating, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Ways to contribute
 
+- **Ask a question or start a conversation** — use
+  [GitHub Discussions](https://github.com/organvm/dot-github--logos/discussions)
+  for community interaction, open-ended ideas, and feedback that is not yet a
+  scoped change.
 - **Report a bug or suggest an idea** — open an [issue](../../issues). For
   anything large (a new essay topic, a change to the publishing workflow, an
   editorial policy update), open an issue to discuss it before writing code.
@@ -50,7 +54,10 @@ you're unsure.
 
 ## Getting help
 
-- Open an [issue](../../issues) with any question.
+- Start a
+  [GitHub Discussion](https://github.com/organvm/dot-github--logos/discussions)
+  with questions, reception notes, or open-ended feedback.
+- Open an [issue](../../issues) when the request is actionable and scoped.
 - Check the relevant repo's `README` — it's the source of truth for that repo's
   setup and workflow.
 

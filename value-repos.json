@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "description": "Repos promoted into the ranked value tier - discovered to hold concrete, build-out-worthy latent value.",
+  "ranked": [
+    {
+      "repo": "organvm/dot-github--logos",
+      "promoted": "2026-07-01",
+      "source": "auto-discovery",
+      "tier": "infrastructure",
+      "value": "Live public-process control surface for ORGAN-V: org profile, community-health defaults, intake templates, pipeline heartbeat, distribution experiment record, signal triage ritual, and external-validation/revenue ledgers.",
+      "first_task": "Close the stale W14 top-of-funnel reach loop by adding a reach ledger or issue template that records source, action, owner, target date, and shipped link, then update docs/signals-triage/triage-log.md so reach remediation is tracked with the same SLA discipline as conversion fixes.",
+      "thesis": "DISCOVERY.md"
+    }
+  ]
+}
